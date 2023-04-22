@@ -1,0 +1,5 @@
+# ignore delivery-administration-domain.iml
+delivery-administration-domain.iml
+
+#ignore folder .idea
+.idea
