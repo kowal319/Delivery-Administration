@@ -10,11 +10,11 @@
     <artifactId>Delivery-Administration</artifactId>
     <packaging>pom</packaging>
 
-    <name>Delivery-Administration</name>
+    <name>deliver-Administration</name>
     <url>http://maven.apache.org</url>
     <modules>
-        <module>delivery-administration-application</module>
-        <module>delivery-administration-structure</module>
+        <module>/pl.d3vshub.deliveradministrationapplication/deliver-administration-application</module>
+        <module>/pl.d3vshub.deliveradministrationstructure/deliver-administration-structure</module>
     </modules>
 
     <properties>

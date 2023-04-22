@@ -7,16 +7,15 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.delivery</groupId>
-    <artifactId>Delivery</artifactId>
+    <groupId>org.deliver</groupId>
+    <artifactId>deliver</artifactId>
     <packaging>pom</packaging>
-
-    <name>Delivery</name>
+    <name>deliver</name>
     <url>http://maven.apache.org</url>
     <modules>
-        <module>domain</module>
-        <module>application</module>
-        <module>structure</module>
+        <module>/pl.d3vshub.deliverdomain/domain</module>
+        <module>/pl.d3vshub.deliverapplication/application</module>
+        <module>/pl.d3vshub.deliverstructure/structure</module>
     </modules>
 
     <properties>
@@ -32,14 +31,5 @@
         </dependency>
     </dependencies>
 
-    <build>
-        <resources>
-            <resource>
-                <directory>src/main/resources</directory>
-                <excludes>
-                    <exclude>**/*</exclude>
-                </excludes>
-            </resource>
-        </resources>
-    </build>
+
 </project>
