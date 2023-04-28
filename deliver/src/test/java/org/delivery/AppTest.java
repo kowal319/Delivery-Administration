@@ -3,10 +3,12 @@ package org.delivery;
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
  * Unit test for simple App.
  */
+@SpringBootApplication
 public class AppTest 
     extends TestCase
 {
