@@ -7,10 +7,10 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>Delivery-Administration</artifactId>
+    <artifactId>deliver-administration</artifactId>
     <packaging>pom</packaging>
 
-    <name>deliver-Administration</name>
+    <name>deliver-administration</name>
     <url>http://maven.apache.org</url>
     <modules>
         <module>/pl.d3vshub.deliveradministrationapplication/deliver-administration-application</module>
