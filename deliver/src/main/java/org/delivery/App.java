@@ -1,14 +1,8 @@
 package org.delivery;
 
 import jakarta.transaction.Transactional;
-import org.delivery.Entity.Courier;
-import org.delivery.Entity.Customer;
-import org.delivery.Entity.Delivery;
-import org.delivery.Entity.Order;
-import org.delivery.Repository.CourierRepository;
-import org.delivery.Repository.CustomerRepository;
-import org.delivery.Repository.DeliveryRepository;
-import org.delivery.Repository.OrderRepository;
+import org.delivery.Entity.*;
+import org.delivery.Repository.*;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -37,7 +31,8 @@ public class App
     public CommandLineRunner run(CustomerRepository customerRepository,
                                  CourierRepository courierRepository,
                                  DeliveryRepository deliveryRepository,
-                                 OrderRepository orderRepository) throws Exception{
+                                 OrderRepository orderRepository,
+                                 TrackingRepository trackingRepository) throws Exception{
         return(String[] args) ->{
 
             //Customer test adding
@@ -65,12 +60,18 @@ public class App
             order1.setTotalPrice(totalPrice1);
             orderRepository.save(order1);
 
+            //Tracking test adding
+            LocalDateTime updatedAt1 = LocalDateTime.parse("2023-05-11T15:40:00");
+            Tracking tracking1 = new Tracking(delivery1, "undelivered", "Warszawa", updatedAt1);
+            trackingRepository.save(tracking1);
+
 
             //
             customerRepository.findAll().forEach(customer -> System.out.println(customer));
             courierRepository.findAll().forEach(courier -> System.out.println(courier));
             deliveryRepository.findAll().forEach(delivery -> System.out.println(delivery));
             orderRepository.findAll().forEach(order -> System.out.println(order));
+            trackingRepository.findAll().forEach(tracking -> System.out.println(tracking));
 
         };
     }
