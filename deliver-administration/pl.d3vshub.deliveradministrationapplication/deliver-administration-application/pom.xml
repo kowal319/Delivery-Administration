@@ -4,11 +4,12 @@
         <artifactId>deliver-administration</artifactId>
         <groupId>org.example</groupId>
         <version>1.0-SNAPSHOT</version>
+        <relativePath>../../pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>delivery-administration-application</artifactId>
+    <artifactId>deliver-administration-application</artifactId>
     <packaging>war</packaging>
-    <name>delivery-administration-application Maven Webapp</name>
+    <name>deliver-administration-application Maven Webapp</name>
     <url>http://maven.apache.org</url>
     <dependencies>
         <dependency>
@@ -19,6 +20,6 @@
         </dependency>
     </dependencies>
     <build>
-        <finalName>delivery-administration-application</finalName>
+        <finalName>deliver-administration-application</finalName>
     </build>
 </project>
