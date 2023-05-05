@@ -12,17 +12,11 @@
   <version>1.0-SNAPSHOT</version>
     
   <modules>
-        
     <module>deliver</module>
-        
     <module>deliver-administration</module>
-        
     <module>common</module>
-        
     <module>bom</module>
-        
     <module>integration</module>
-
   </modules>
     
   <properties>
